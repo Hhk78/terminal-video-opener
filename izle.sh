@@ -22,4 +22,4 @@ read audio_format
 ONLYAUDIO=$(yt-dlp -f "$audio_format" -g "$video_link")
 
 # Videoyu ve sesi oynat
-mpv "$ONLYVIDEO" --audio-file="$ONLYAUDIO"
+mpv "$ONLYVIDEO" --audio-file="$ONLYAUDIO" --fullscreen
